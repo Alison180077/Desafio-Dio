@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificador de Herói</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Classificador de Nível de Herói</h1>
+
+    <label for="heroiSelect">Escolha seu herói:</label>
+    <select id="heroiSelect">
+      <option value="" disabled selected>Selecione um herói</option>
+      <option value="artemis">Artemis</option>
+      <option value="zeus">Zeus</option>
+      <option value="athena">Athena</option>
+      <option value="homemDeFerro">Homem de Ferro</option>
+      <option value="batman">Batman</option>
+    </select>
+
+    <div id="heroiInfo" class="card hidden">
+      <img id="heroiImg" src="" alt="Imagem do Herói">
+      <h2 id="heroiNome"></h2>
+      <p><strong>XP:</strong> <span id="heroiXp"></span></p>
+      <p><strong>Nível:</strong> <span id="heroiNivel"></span></p>
+    </div>
+  </div>
+
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
